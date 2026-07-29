@@ -5,7 +5,7 @@ import './index.css'
 import axios from 'axios'
 
 // Set up dynamic global API base URL for Vercel/production deployment
-axios.defaults.baseURL = import.meta.env.VITE_API_URL || '';
+axios.defaults.baseURL = (import.meta as any).env.VITE_API_URL || '';
 
 // Load Poppins fonts
 import '@fontsource/poppins/300.css'
