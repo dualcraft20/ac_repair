@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | AC SERVICE UAE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#690005",
+                    "inverse-on-surface": "#2a3040",
+                    "on-secondary-fixed-variant": "#005228",
+                    "surface-container": "#19202e",
+                    "on-secondary-container": "#00431f",
+                    "tertiary-fixed": "#d0e4ff",
+                    "surface-variant": "#2e3544",
+                    "on-surface": "#dce2f6",
+                    "primary-fixed-dim": "#ffb68e",
+                    "surface": "#0c1321",
+                    "primary-fixed": "#ffdbca",
+                    "primary-container": "#ff7a1a",
+                    "on-primary-container": "#5e2700",
+                    "surface-container-highest": "#2e3544",
+                    "on-surface-variant": "#e0c0b1",
+                    "inverse-surface": "#dce2f6",
+                    "on-tertiary-container": "#003a61",
+                    "inverse-primary": "#9c4500",
+                    "surface-bright": "#323949",
+                    "tertiary-fixed-dim": "#9bcbff",
+                    "secondary-fixed": "#6bfe9c",
+                    "primary": "#ffb68e",
+                    "error-container": "#93000a",
+                    "secondary": "#4ae183",
+                    "secondary-fixed-dim": "#4ae183",
+                    "on-tertiary-fixed": "#001d34",
+                    "on-tertiary": "#003256",
+                    "on-secondary": "#003919",
+                    "surface-container-high": "#232a39",
+                    "outline": "#a78b7d",
+                    "tertiary-container": "#46a6f8",
+                    "on-error-container": "#ffdad6",
+                    "on-background": "#dce2f6",
+                    "surface-dim": "#0c1321",
+                    "surface-container-lowest": "#070e1c",
+                    "tertiary": "#9bcbff",
+                    "error": "#ffb4ab",
+                    "surface-container-low": "#151b2a",
+                    "on-tertiary-fixed-variant": "#004a7a",
+                    "on-primary-fixed-variant": "#773300",
+                    "on-secondary-fixed": "#00210c",
+                    "surface-tint": "#ffb68e",
+                    "secondary-container": "#06bb63",
+                    "outline-variant": "#584236",
+                    "on-primary": "#542200",
+                    "on-primary-fixed": "#331200",
+                    "background": "#0c1321"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "48px",
+                    "stack-sm": "12px",
+                    "stack-md": "24px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "unit": "8px",
+                    "stack-lg": "48px"
+            },
+            "fontFamily": {
+                    "caption": ["Inter"],
+                    "headline-md": ["Manrope"],
+                    "display-lg-mobile": ["Manrope"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "display-lg": ["Manrope"],
+                    "headline-sm": ["Manrope"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(16, 27, 48, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .atmospheric-orb {
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            filter: blur(100px);
+            z-index: -1;
+            opacity: 0.15;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary/30">
+<!-- Atmospheric Background Effects -->
+<div class="atmospheric-orb bg-primary top-[-10%] left-[-20%]"></div>
+<div class="atmospheric-orb bg-tertiary-container bottom-[-10%] right-[-20%]"></div>
+<!-- Navigation -->
+<nav class="bg-surface-container shadow-md sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface">AC SERVICE UAE</span>
+<div class="hidden md:flex gap-gutter">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">Emergency</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">About</a>
+</div>
+<div class="flex gap-2">
+<button class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-label-md text-label-md hover:scale-95 transition-transform active:scale-90">Call Now</button>
+</div>
+</nav>
+<main class="flex flex-col gap-stack-lg pb-stack-lg">
+<!-- Header Section -->
+<header class="px-margin-mobile pt-stack-lg text-center">
+<div class="inline-block px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label-md text-caption mb-stack-sm">
+                SINCE 2008
+            </div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile mb-4 text-on-surface">
+                Engineering <span class="text-primary">Precision</span><br/>Cooling Solutions.
+            </h1>
+<p class="text-body-md text-on-surface-variant max-w-md mx-auto">
+                Providing reliable, professional air conditioning services across the UAE to keep your space comfortable even in extreme heat.
+            </p>
+</header>
+<!-- Story Image Section -->
+<section class="px-margin-mobile">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden glass-card shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A professional team of HVAC technicians in matching navy and orange uniforms standing in front of a modern Dubai skyscraper. The scene is bright with desert sunlight, featuring high-end toolkits and a clean, branded service van. The aesthetic is sharp, corporate, and trustworthy, with deep blue and vivid orange brand colors integrated into the environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMvq-S5cxL84oJxwc6lbKghzJWPrp1wro4Rinyi-Vk82Z8um93HEUiVbNn35pFYWEDlLVvUN1-jSra5x5GRaooppMYJIXkGeQv2R_sdNMFCRrE2p1NBw43sp6k9OSTEU0RpqdnZ_rKrs9d9LnRZO4LO7GXYwxjl5NKN4lgW42GGMU0dcLmfEnUKJmphMACVdRkaBqHo7fr44S2xeu-JVER_VavROx5NVWdw0gCvXkDb40hrZZUv0rA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-label-md font-label-md text-primary">OUR JOURNEY</p>
+<p class="text-body-md text-on-surface">From a small repair shop to UAE's leading HVAC provider.</p>
+</div>
+</div>
+</section>
+<!-- Mission Blocks Grid -->
+<section class="px-margin-mobile grid grid-cols-1 gap-stack-md">
+<div class="grid grid-cols-2 gap-stack-md">
+<div class="glass-card p-stack-md rounded-xl flex flex-col gap-stack-sm">
+<div class="w-12 h-12 rounded-full bg-tertiary/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">verified</span>
+</div>
+<h3 class="font-headline-sm text-[18px] text-on-surface">Integrity</h3>
+<p class="text-caption text-on-surface-variant">Transparent pricing with no hidden charges, ever.</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl flex flex-col gap-stack-sm">
+<div class="w-12 h-12 rounded-full bg-secondary/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">speed</span>
+</div>
+<h3 class="font-headline-sm text-[18px] text-on-surface">Speed</h3>
+<p class="text-caption text-on-surface-variant">Rapid response for emergency repairs citywide.</p>
+</div>
+</div>
+<div class="glass-card p-stack-md rounded-xl flex flex-col gap-stack-sm border-l-4 border-l-primary">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Our Mission</h3>
+<p class="text-body-md text-on-surface-variant">
+                    To deliver sustainable, high-efficiency cooling environments for every resident and business in the Emirates, ensuring safety, comfort, and peace of mind through technical excellence.
+                </p>
+</div>
+</section>
+<!-- Trust Stats (Stacked) -->
+<section class="px-margin-mobile bg-surface-container-low py-stack-lg mx-margin-mobile rounded-2xl flex flex-col items-center gap-stack-lg text-center">
+<div class="flex flex-col items-center">
+<span class="text-display-lg-mobile font-display-lg-mobile text-secondary">15k+</span>
+<span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-widest">Happy Clients</span>
+</div>
+<div class="w-1/2 h-px bg-outline-variant/30"></div>
+<div class="flex flex-col items-center">
+<span class="text-display-lg-mobile font-display-lg-mobile text-primary">24/7</span>
+<span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-widest">Support Coverage</span>
+</div>
+<div class="w-1/2 h-px bg-outline-variant/30"></div>
+<div class="flex flex-col items-center">
+<span class="text-display-lg-mobile font-display-lg-mobile text-tertiary">500+</span>
+<span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-widest">Expert Engineers</span>
+</div>
+</section>
+<!-- Our Process (Vertical Steps) -->
+<section class="px-margin-mobile">
+<h2 class="font-headline-md text-headline-md mb-stack-lg text-center">How We <span class="text-primary">Work</span></h2>
+<div class="relative flex flex-col gap-stack-lg pl-10">
+<!-- Vertical Line -->
+<div class="absolute left-[19px] top-4 bottom-4 w-[2px] bg-gradient-to-b from-primary via-tertiary to-secondary opacity-30"></div>
+<!-- Step 1 -->
+<div class="relative group">
+<div class="absolute -left-10 top-0 w-10 h-10 rounded-full glass-card border-primary/40 flex items-center justify-center z-10 group-hover:scale-110 transition-transform bg-surface-container-high">
+<span class="material-symbols-outlined text-[20px] text-primary">phone_iphone</span>
+</div>
+<div class="glass-card p-stack-md rounded-xl">
+<h4 class="font-headline-sm text-[18px] text-on-surface mb-1">1. Easy Booking</h4>
+<p class="text-body-md text-on-surface-variant text-sm">Schedule your visit via WhatsApp or call in seconds.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative group">
+<div class="absolute -left-10 top-0 w-10 h-10 rounded-full glass-card border-tertiary/40 flex items-center justify-center z-10 group-hover:scale-110 transition-transform bg-surface-container-high">
+<span class="material-symbols-outlined text-[20px] text-tertiary">engineering</span>
+</div>
+<div class="glass-card p-stack-md rounded-xl">
+<h4 class="font-headline-sm text-[18px] text-on-surface mb-1">2. Precision Audit</h4>
+<p class="text-body-md text-on-surface-variant text-sm">Our team arrives in 60 mins for a full diagnostic check.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative group">
+<div class="absolute -left-10 top-0 w-10 h-10 rounded-full glass-card border-secondary/40 flex items-center justify-center z-10 group-hover:scale-110 transition-transform bg-surface-container-high">
+<span class="material-symbols-outlined text-[20px] text-secondary">check_circle</span>
+</div>
+<div class="glass-card p-stack-md rounded-xl">
+<h4 class="font-headline-sm text-[18px] text-on-surface mb-1">3. Guaranteed Fix</h4>
+<p class="text-body-md text-on-surface-variant text-sm">On-the-spot repair with a 6-month service warranty.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Badges -->
+<section class="px-margin-mobile flex flex-wrap justify-center gap-stack-md opacity-70 grayscale contrast-125">
+<div class="h-12 w-24 bg-surface-variant/30 rounded flex items-center justify-center">
+<span class="font-headline-sm text-label-md">ISO 9001</span>
+</div>
+<div class="h-12 w-24 bg-surface-variant/30 rounded flex items-center justify-center">
+<span class="font-headline-sm text-label-md">ESMA CERT</span>
+</div>
+<div class="h-12 w-24 bg-surface-variant/30 rounded flex items-center justify-center">
+<span class="font-headline-sm text-label-md">HSE APPROVED</span>
+</div>
+</section>
+</main>
+<!-- WhatsApp Floating Action -->
+<a class="fixed bottom-6 right-6 w-16 h-16 bg-[#2ECC71] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all z-[60] group" href="#">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.539 2.016 2.126-.54c1.029.563 2.025.856 3.162.858 3.181 0 5.768-2.587 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm3.29 8.087c-.147.42-1.047.817-1.44.833-.423.017-.862.063-1.4-.112-2.126-.688-3.537-2.837-3.642-2.977-.105-.14-1.019-1.353-.941-2.56.077-1.206.632-1.802.859-2.047.227-.246.494-.307.658-.307.164 0 .329.002.473.01.155.008.362-.058.567.447.21.516.716 1.742.778 1.868.063.126.105.272.021.439-.084.167-.126.272-.252.418-.126.146-.265.326-.378.439-.126.126-.258.265-.112.516.146.251.65 1.07 1.393 1.732.956.851 1.761 1.114 2.012 1.239.251.126.398.105.545-.063.146-.167.632-.733.801-.984.167-.251.336-.209.567-.126.231.084 1.465.69 1.717.816.251.126.42.188.482.293.062.105.062.61-.085 1.03z"></path></svg>
+</a>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 pt-stack-lg pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col gap-stack-sm">
+<span class="text-headline-sm font-extrabold text-primary">AC SERVICE UAE</span>
+<p class="text-on-surface-variant text-caption">© 2024 AC Service UAE. Precision Cooling for the Desert.</p>
+</div>
+<div>
+<h5 class="text-on-surface font-bold mb-4">Quick Links</h5>
+<ul class="flex flex-col gap-2">
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors text-caption" href="#">Residential AC</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors text-caption" href="#">Commercial Cooling</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors text-caption" href="#">Emergency Repair</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-on-surface font-bold mb-4">Support</h5>
+<ul class="flex flex-col gap-2">
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors text-caption" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors text-caption" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors text-caption" href="#">Maintenance Plans</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-on-surface font-bold mb-4">Follow Us</h5>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant hover:text-primary cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant hover:text-primary cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple intersection observer for reveal animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.glass-card').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

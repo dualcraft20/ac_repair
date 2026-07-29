@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - AC SERVICE UAE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Shared Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#690005",
+                    "inverse-on-surface": "#2a3040",
+                    "on-secondary-fixed-variant": "#005228",
+                    "surface-container": "#19202e",
+                    "on-secondary-container": "#00431f",
+                    "tertiary-fixed": "#d0e4ff",
+                    "surface-variant": "#2e3544",
+                    "on-surface": "#dce2f6",
+                    "primary-fixed-dim": "#ffb68e",
+                    "surface": "#0c1321",
+                    "primary-fixed": "#ffdbca",
+                    "primary-container": "#ff7a1a",
+                    "on-primary-container": "#5e2700",
+                    "surface-container-highest": "#2e3544",
+                    "on-surface-variant": "#e0c0b1",
+                    "inverse-surface": "#dce2f6",
+                    "on-tertiary-container": "#003a61",
+                    "inverse-primary": "#9c4500",
+                    "surface-bright": "#323949",
+                    "tertiary-fixed-dim": "#9bcbff",
+                    "secondary-fixed": "#6bfe9c",
+                    "primary": "#ffb68e",
+                    "error-container": "#93000a",
+                    "secondary": "#4ae183",
+                    "secondary-fixed-dim": "#4ae183",
+                    "on-tertiary-fixed": "#001d34",
+                    "on-tertiary": "#003256",
+                    "on-secondary": "#003919",
+                    "surface-container-high": "#232a39",
+                    "outline": "#a78b7d",
+                    "tertiary-container": "#46a6f8",
+                    "on-error-container": "#ffdad6",
+                    "on-background": "#dce2f6",
+                    "surface-dim": "#0c1321",
+                    "surface-container-lowest": "#070e1c",
+                    "tertiary": "#9bcbff",
+                    "error": "#ffb4ab",
+                    "surface-container-low": "#151b2a",
+                    "on-tertiary-fixed-variant": "#004a7a",
+                    "on-primary-fixed-variant": "#773300",
+                    "on-secondary-fixed": "#00210c",
+                    "surface-tint": "#ffb68e",
+                    "secondary-container": "#06bb63",
+                    "outline-variant": "#584236",
+                    "on-primary": "#542200",
+                    "on-primary-fixed": "#331200",
+                    "background": "#0c1321"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "48px",
+                    "stack-sm": "12px",
+                    "stack-md": "24px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "unit": "8px",
+                    "stack-lg": "48px"
+            },
+            "fontFamily": {
+                    "caption": ["Inter"],
+                    "headline-md": ["Manrope"],
+                    "display-lg-mobile": ["Manrope"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "display-lg": ["Manrope"],
+                    "headline-sm": ["Manrope"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(16, 27, 48, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .atmospheric-orb {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: -1;
+            opacity: 0.07;
+        }
+        .orb-orange { background: #FF7A1A; top: -200px; right: -200px; }
+        .orb-blue { background: #3B9EF0; bottom: -200px; left: -200px; }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0c1321; }
+        ::-webkit-scrollbar-thumb { background: #2e3544; border-radius: 3px; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface overflow-x-hidden">
+<!-- Atmospheric Orbs -->
+<div class="atmospheric-orb orb-orange"></div>
+<div class="atmospheric-orb orb-blue"></div>
+<!-- Top Navigation -->
+<nav class="sticky top-0 z-50 bg-surface-container shadow-md flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface">AC SERVICE UAE</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">Emergency</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">Contact</a>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-bold hover:scale-95 transition-all">Call Now</button>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- Main Content -->
+<main class="px-margin-mobile py-stack-lg max-w-container-max mx-auto space-y-stack-lg">
+<!-- Page Title -->
+<header class="text-center space-y-2">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-primary">Get in Touch</h1>
+<p class="text-on-surface-variant text-body-lg">Available 24/7 for emergency repairs across the UAE.</p>
+</header>
+<!-- Contact Cards Section -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Emergency Support -->
+<div class="glass-card p-6 rounded-xl flex flex-col items-center text-center space-y-4">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">emergency_home</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm">Emergency Support</h3>
+<p class="text-on-surface-variant font-body-md">On-site within 60 minutes for critical cooling failures.</p>
+<a class="text-primary-fixed-dim font-bold text-body-lg" href="tel:+97100000000">+971 (0) 4 123 4567</a>
+</div>
+<!-- WhatsApp Support -->
+<div class="glass-card p-6 rounded-xl flex flex-col items-center text-center space-y-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm">WhatsApp Chat</h3>
+<p class="text-on-surface-variant font-body-md">Send photos of your AC unit for a quick diagnostic quote.</p>
+<a class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-lg font-bold flex items-center gap-2" href="#">
+                    Message Now
+                </a>
+</div>
+<!-- General Inquiries -->
+<div class="glass-card p-6 rounded-xl flex flex-col items-center text-center space-y-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-container/20 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm">Email Us</h3>
+<p class="text-on-surface-variant font-body-md">For maintenance contracts and commercial quotations.</p>
+<span class="text-on-surface font-bold">service@acserviceuae.com</span>
+</div>
+</section>
+<!-- Coverage Areas -->
+<section class="space-y-stack-md">
+<h2 class="text-headline-md font-headline-md text-on-surface">Service Coverage</h2>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 glass-card rounded-full text-label-md font-label-md border-secondary/20 text-secondary">Dubai Downtown</span>
+<span class="px-4 py-1.5 glass-card rounded-full text-label-md font-label-md border-secondary/20 text-secondary">Dubai Marina</span>
+<span class="px-4 py-1.5 glass-card rounded-full text-label-md font-label-md border-secondary/20 text-secondary">Abu Dhabi City</span>
+<span class="px-4 py-1.5 glass-card rounded-full text-label-md font-label-md border-secondary/20 text-secondary">Sharjah Central</span>
+<span class="px-4 py-1.5 glass-card rounded-full text-label-md font-label-md border-secondary/20 text-secondary">Jumeirah</span>
+<span class="px-4 py-1.5 glass-card rounded-full text-label-md font-label-md border-secondary/20 text-secondary">Palm Jumeirah</span>
+<span class="px-4 py-1.5 glass-card rounded-full text-label-md font-label-md border-secondary/20 text-secondary">Yas Island</span>
+</div>
+</section>
+<!-- Booking Form Card -->
+<section class="glass-card rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-5">
+<div class="lg:col-span-2 relative min-h-[300px]">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A professional HVAC technician in a clean navy uniform inspecting a modern air conditioning unit in a luxury Dubai apartment. Soft morning sunlight streams through floor-to-ceiling windows, highlighting the technical precision and clean environment. The overall aesthetic is premium, cool, and professional with a deep blue and orange color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp6BhG3EdJGhWQIkMSQQ0zuKu9u-1orDTp10vDhoMaoi7YIvAOCdKS44vsXRjXvavEfJEupojrH3IJlRTgMLhYlgAKDROWYo5GCl5LWZD0p7Xc_ReYh-udPIcEkWz1URDFWrjSeXN8-mozTFKZ8-XYKo7UyETzyZS0ae3n09teqTMKHaZAA1BmqsCDX0jpe6iVVoDCRbIlBEhMFnC7KQK60jYsLZRUXBCJyqEj404WvMSG_xxNE9mA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent lg:bg-gradient-to-r p-8 flex flex-col justify-end">
+<h3 class="text-headline-sm font-headline-sm text-white mb-2">Book a Service</h3>
+<p class="text-on-surface-variant">Fill out the form and our technical team will call you back within 15 minutes.</p>
+</div>
+</div>
+<div class="lg:col-span-3 p-8 md:p-12 space-y-6">
+<form class="space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-label-md font-label-md text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-3 text-on-surface focus:ring-2 focus:ring-primary" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-label-md font-label-md text-on-surface-variant">Phone Number</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-3 text-on-surface focus:ring-2 focus:ring-primary" placeholder="+971 -- --- ----" type="tel"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-label-md font-label-md text-on-surface-variant">Service Type</label>
+<select class="w-full bg-surface-container-high border-none rounded-lg p-3 text-on-surface focus:ring-2 focus:ring-primary">
+<option>Emergency Repair</option>
+<option>General Maintenance</option>
+<option>Gas Top-up</option>
+<option>AC Installation</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="text-label-md font-label-md text-on-surface-variant">Message (Optional)</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-lg p-3 text-on-surface focus:ring-2 focus:ring-primary" placeholder="Briefly describe the issue..." rows="3"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-xl font-bold text-lg hover:brightness-110 active:scale-95 transition-all" type="submit">
+                        Request Instant Callback
+                    </button>
+</form>
+</div>
+</section>
+<!-- Dark Map Frame -->
+<section class="space-y-stack-md">
+<h2 class="text-headline-md font-headline-md text-on-surface">Our Headquarters</h2>
+<div class="w-full h-80 rounded-2xl overflow-hidden glass-card relative grayscale contrast-125 brightness-75 hover:grayscale-0 transition-all duration-700">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, high-contrast satellite view map of Dubai and Abu Dhabi at night, showing the glowing city lights against the dark desert and ocean. The map is stylized in a dark mode aesthetic with deep navies and glowing amber paths, highlighting the primary service areas of AC Service UAE." data-location="Dubai" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoGwUuDVCphN0kE3kvbb6qgUkqysOUO0deUnJMvjAfBzQV8GQ-zXD4SUNhnS6WdvGkbi4dDj-vCJ-KqYl8BwPLk-30mRv7JpJ9mbp0gQ0BqTogS87efNNjdFCXbsrw8QeYxhSI3t0o28RCj2c3RV0-DreeQGG9Cd1DxB3Tb-dTxbmHddnfMn0ldE5PMZUKCzWd0fMHvV_0gyTwRfcJPATx-R8jeDDxCTyA8KldmI8vYapDz3sKbN4A')"></div>
+<div class="absolute bottom-6 left-6 p-4 glass-card rounded-lg flex items-center gap-4">
+<div class="p-2 bg-primary rounded-lg">
+<span class="material-symbols-outlined text-on-primary">location_on</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Al Quoz Industrial Area 3</p>
+<p class="text-caption font-caption text-on-surface-variant">Dubai, United Arab Emirates</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 px-margin-mobile md:px-margin-desktop py-stack-lg">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-stack-lg">
+<div class="col-span-1 md:col-span-1">
+<span class="text-headline-sm font-headline-sm font-extrabold text-primary">AC SERVICE UAE</span>
+<p class="mt-4 text-on-surface-variant text-body-md">Precision Cooling for the Desert. Licensed professional HVAC experts serving the residential and commercial sectors since 2010.</p>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-4">Quick Links</h4>
+<ul class="space-y-2 text-on-surface-variant font-label-md">
+<li><a class="hover:text-tertiary transition-colors" href="#">Residential AC</a></li>
+<li><a class="hover:text-tertiary transition-colors" href="#">Commercial Cooling</a></li>
+<li><a class="hover:text-tertiary transition-colors" href="#">Emergency Repair</a></li>
+<li><a class="hover:text-tertiary transition-colors" href="#">Maintenance Plans</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-4">Legal</h4>
+<ul class="space-y-2 text-on-surface-variant font-label-md">
+<li><a class="hover:text-tertiary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-tertiary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-4">Newsletter</h4>
+<div class="flex gap-2">
+<input class="bg-surface-variant border-none rounded-lg p-2 flex-1 text-sm focus:ring-2 focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary px-3 py-2 rounded-lg text-on-primary"><span class="material-symbols-outlined">send</span></button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-12 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-on-surface-variant text-caption font-caption">© 2024 AC Service UAE. Precision Cooling for the Desert.</p>
+</div>
+</footer>
+<!-- Sticky Floating Action Bar (Mobile Only) -->
+<div class="fixed bottom-6 left-6 right-6 z-50 flex gap-4 md:hidden">
+<a class="flex-1 bg-primary-container text-on-primary-container h-14 rounded-full flex items-center justify-center gap-2 font-bold shadow-2xl active:scale-95 transition-all" href="tel:+97100000000">
+<span class="material-symbols-outlined">call</span>
+            Call Now
+        </a>
+<a class="w-14 h-14 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center shadow-2xl active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+</div>
+<script>
+        // Simple micro-interaction for the booking form
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Request Sent!';
+            btn.classList.replace('bg-primary-container', 'bg-secondary-container');
+            
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.replace('bg-secondary-container', 'bg-primary-container');
+                form.reset();
+            }, 3000);
+        });
+    </script>
+</body></html>
