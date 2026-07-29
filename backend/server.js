@@ -90,13 +90,9 @@ app.get('/', (req, res) => {
 // Boot server
 async function startServer() {
   await connectDB();
-  if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
-    app.listen(PORT, () => {
-      console.log(`🚀 Express server running on port http://localhost:${PORT}`);
-    });
-  }
+  app.listen(PORT, () => {
+    console.log(`🚀 Express server running on port http://localhost:${PORT}`);
+  });
 }
 
 startServer();
-
-export default app;
