@@ -2,6 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
+import axios from 'axios'
+
+// Set up dynamic global API base URL for Vercel/production deployment
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || '';
 
 // Load Poppins fonts
 import '@fontsource/poppins/300.css'
