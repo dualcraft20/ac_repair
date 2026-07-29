@@ -31,3 +31,9 @@ pnpm-debug.log*
 
 # Local SQLite / Fallback DB Changes
 /backend/data/db-fallback.json
+
+# Temporary Design / Mock UI Reference Assets
+/stitch_dubai_frost_ac_ui (1)/
+/DESIGN.md
+/frontend_design_explanation.md
+/ac-service-uae-antigravity-prompt.md
