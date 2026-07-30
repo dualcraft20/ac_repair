@@ -39,9 +39,84 @@ const staggerContainer = {
   }
 };
 
+const DEFAULT_SERVICES_ALL = [
+  {
+    id: 1,
+    name: "Central AC Inspection & Diagnostics",
+    icon: "Wind",
+    description: "Comprehensive diagnostics of central cooling units, duct pressures, and electrical sensors to pinpoint performance issues before they worsen.",
+    residential: true,
+    commercial: true
+  },
+  {
+    id: 2,
+    name: "Filter Cleaning & Replacement",
+    icon: "Snowflake",
+    description: "Deep washing of filters or premium replacement to optimize cooling efficiency, eliminate dust, and enhance overall indoor air quality.",
+    residential: true,
+    commercial: true
+  },
+  {
+    id: 3,
+    name: "Coil & Duct Cleaning",
+    icon: "ShieldCheck",
+    description: "Deep chemical cleaning of condenser coils and duct sterilization to prevent bacterial/mold build-up in Dubai's humid seasons.",
+    residential: true,
+    commercial: true
+  },
+  {
+    id: 4,
+    name: "Thermostat & Electrical Check",
+    icon: "Clock",
+    description: "Recalibration of smart/digital thermostats and thorough inspection of relays, capacitors, and power lines to prevent electrical short-circuits.",
+    residential: true,
+    commercial: true
+  },
+  {
+    id: 5,
+    name: "Refrigerant Level Inspection & Refill",
+    icon: "Wrench",
+    description: "Pressure testing for gas leaks, pipe sealing, and environment-friendly R410A/R22 refrigerant top-ups to restore maximum cooling power.",
+    residential: true,
+    commercial: false
+  },
+  {
+    id: 6,
+    name: "Preventive Maintenance Contracts",
+    icon: "ShieldCheck",
+    description: "Customized annual maintenance packages for villas, apartments, and commercial facilities ensuring regular check-ups and zero call-out charges.",
+    residential: true,
+    commercial: true
+  },
+  {
+    id: 7,
+    name: "24/7 Emergency AC Repair",
+    icon: "Clock",
+    description: "Immediate response for sudden cooling breakdowns in peak summer heat. Rapid dispatch of certified HVAC technicians day or night.",
+    residential: true,
+    commercial: true
+  },
+  {
+    id: 8,
+    name: "AC Installation & Replacement",
+    icon: "Wrench",
+    description: "Hassle-free replacement of aged central AC units with high-efficiency, energy-saving models. Full installation warranty included.",
+    residential: true,
+    commercial: true
+  },
+  {
+    id: 9,
+    name: "Minor Electrical & Plumbing Support",
+    icon: "Wrench",
+    description: "Ancillary support for drain pipe blockages, overflow tray piping, and basic electrical breaker fixes integrated with your AC unit.",
+    residential: false,
+    commercial: true
+  }
+];
+
 export default function Services() {
-  const [services, setServices] = useState<Service[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [services, setServices] = useState<Service[]>(DEFAULT_SERVICES_ALL);
+  const [loading, setLoading] = useState(false);
   const [filterType, setFilterType] = useState<'all' | 'residential' | 'commercial'>('all');
   const navigate = useNavigate();
   const { language } = useLanguage();
@@ -50,11 +125,11 @@ export default function Services() {
     const fetchServices = async () => {
       try {
         const response = await axios.get('/api/services');
-        setServices(response.data);
+        if (response.data && response.data.length > 0) {
+          setServices(response.data);
+        }
       } catch (err) {
-        console.error('Error loading services list:', err);
-      } finally {
-        setLoading(false);
+        console.warn('Backend API offline, using built-in services catalog backup:', err);
       }
     };
     fetchServices();

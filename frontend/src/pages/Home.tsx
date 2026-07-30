@@ -32,20 +32,53 @@ const staggerContainer = {
   }
 };
 
+const DEFAULT_SERVICES = [
+  {
+    id: 1,
+    name: "Central AC Inspection & Diagnostics",
+    icon: "Wind",
+    description: "Comprehensive diagnostics of central cooling units, duct pressures, and electrical sensors to pinpoint performance issues before they worsen."
+  },
+  {
+    id: 2,
+    name: "Filter Cleaning & Replacement",
+    icon: "Snowflake",
+    description: "Deep washing of filters or premium replacement to optimize cooling efficiency, eliminate dust, and enhance overall indoor air quality."
+  },
+  {
+    id: 3,
+    name: "Coil & Duct Cleaning",
+    icon: "ShieldCheck",
+    description: "Deep chemical cleaning of condenser coils and duct sterilization to prevent bacterial/mold build-up in Dubai's humid seasons."
+  },
+  {
+    id: 4,
+    name: "Thermostat & Electrical Check",
+    icon: "Clock",
+    description: "Recalibration of smart/digital thermostats and thorough inspection of relays, capacitors, and power lines to prevent electrical short-circuits."
+  },
+  {
+    id: 5,
+    name: "Refrigerant Level Inspection & Refill",
+    icon: "Wrench",
+    description: "Pressure testing for gas leaks, pipe sealing, and environment-friendly R410A/R22 refrigerant top-ups to restore maximum cooling power."
+  }
+];
+
 export default function Home() {
-  const [services, setServices] = useState<Service[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [services, setServices] = useState<Service[]>(DEFAULT_SERVICES);
+  const [loading, setLoading] = useState(false);
   const { t, language } = useLanguage();
 
   useEffect(() => {
     const fetchServices = async () => {
       try {
         const response = await axios.get('/api/services');
-        setServices(response.data);
+        if (response.data && response.data.length > 0) {
+          setServices(response.data);
+        }
       } catch (err) {
-        console.error('Error fetching services for homepage:', err);
-      } finally {
-        setLoading(false);
+        console.warn('Backend API offline, using built-in services backup:', err);
       }
     };
     fetchServices();
